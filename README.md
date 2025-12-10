@@ -39,8 +39,8 @@ todo-assessment/
 
 **Clone the repository**
 --------------------------------
-git clone https://github.com/HemalTharakaeEranga/To_Do_Assesment.git
-cd To_Do_Assesment
+- git clone https://github.com/HemalTharakaeEranga/To_Do_Assesment.git
+- cd To_Do_Assesment
 
 --------
 
@@ -49,9 +49,7 @@ cd To_Do_Assesment
 - cd backend
 
 - python -m venv .venv
-- . .venv/Scripts/activate   # Windows PowerShell
-- # or: source .venv/bin/activate  # Linux/Mac
-
+- . .venv/Scripts/activate   # Windows PowerShell # or: source .venv/bin/activate  # Linux/Mac
 - pip install -r requirements.txt
 --------
 
