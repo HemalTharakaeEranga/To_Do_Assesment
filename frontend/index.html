@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>📌 To_Do</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-shell">
+        <div class="canvas">
+            <div class="panel form-panel">
+                <div class="card form-card">
+                    <h2 class="card-title"><span class="title-icon">📝</span> Add a Task</h2>
+                    <form id="taskForm" class="task-form" autocomplete="off">
+                        <label class="field">
+                            <span class="label-text">Title</span>
+                            <input id="title" required maxlength="255" placeholder="What’s your plan for today? 😊" />
+                        </label>
+                        <label class="field">
+                            <span class="label-text">Description</span>
+                            <textarea id="description" rows="5"
+                                placeholder="Tell me more about this task 😊📝"></textarea>
+                        </label>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Add</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <div class="panel list-panel">
+                <div class="list-header">
+                    <h3>Recent Tasks</h3>
+                    <p class="muted">Only the most recent 5 tasks are shown</p>
+                </div>
+
+                <div id="tasks" class="task-list">
+                    <!-- tasks injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
